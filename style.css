@@ -1,0 +1,501 @@
+/* ==========================================================================
+   AMAZON CLONE STYLE SHEET
+   Pure HTML & CSS - Clean & Beginner-Friendly
+   ========================================================================== */
+
+/* Universal Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e3e6e6;
+}
+
+/* Common Border Hover Effect */
+.border {
+  border: 1.5px solid transparent;
+  border-radius: 2px;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.border:hover {
+  border: 1.5px solid #ffffff;
+}
+
+/* ==========================================================================
+   HEADER SECTION
+   ========================================================================== */
+
+header {
+  width: 100%;
+}
+
+/* Main Navigation Bar */
+.navbar {
+  height: 60px;
+  background-color: #131921;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+/* Amazon Logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  background-image: url("frontend/photos/amazon_logo.png");
+  background-size: cover;
+  background-position: center;
+  height: 38px;
+  width: 100px;
+  display: inline-block;
+}
+
+/* Delivery Location */
+.nav-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-first {
+  color: #cccccc;
+  font-size: 0.75rem;
+  margin-left: 18px;
+}
+
+.add-sec {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.add-icon {
+  display: flex;
+  align-items: center;
+}
+
+.add-icon i {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+/* Search Bar */
+.nav-search {
+  display: flex;
+  flex-grow: 1;
+  max-width: 800px;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: outline 0.1s ease;
+}
+
+.nav-search:focus-within,
+.nav-search:hover {
+  outline: 3px solid #ff9900;
+}
+
+.search-select {
+  background-color: #f3f3f3;
+  width: 52px;
+  text-align: center;
+  border: none;
+  font-size: 0.8rem;
+  color: #555555;
+  cursor: pointer;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 5px;
+}
+
+.search-select:hover {
+  background-color: #dadada;
+  color: #000000;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 0.95rem;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+}
+
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #febd69;
+  color: #333333;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.search-icon:hover {
+  background-color: #f3a847;
+}
+
+/* Sign In & Orders */
+span {
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+
+.nav-second {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Shopping Cart */
+.nav-cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.nav-cart i {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+/* Secondary Navigation Sub-Panel */
+.panel {
+  height: 39px;
+  background-color: #232f3e;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-size: 0.85rem;
+}
+
+.panel-all {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+}
+
+.panel-ops {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.panel-ops p {
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.panel-ops p:hover {
+  border: 1px solid #ffffff;
+}
+
+.panel-deals {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   HERO / BANNER SECTION
+   ========================================================================== */
+
+.photo-section {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 60%, #e3e6e6 100%), url('frontend/photos/hero_image.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-background-attachment: scroll;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-msg {
+  background-color: #ffffff;
+  color: #0f1111;
+  width: 96%;
+  margin-bottom: 25px;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 0.88rem;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-msg a {
+  color: #007185;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.hero-msg a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   PRODUCT CARDS GRID (SHOP SECTION)
+   ========================================================================== */
+
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  gap: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  width: calc(25% - 15px);
+  min-width: 250px;
+  padding: 20px 15px 15px 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.box-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f1111;
+  line-height: 1.3;
+}
+.box-img{
+  background-size: cover;
+
+}
+.box-img {
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.box-content a {
+  color: #007185;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.box-content a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+
+footer {
+  margin-top: 30px;
+}
+
+/* Footer Panel 1: Back to Top */
+.foot-panel1 {
+  background-color: #37475a;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.foot-panel1:hover {
+  background-color: #485769;
+}
+
+/* Footer Panel 2: Multi-Column Links */
+.foot-panel2 {
+  background-color: #232f3e;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 10%;
+  border-bottom: 1px solid #3a4553;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.foot-panel2 ul {
+  list-style: none;
+}
+
+.foot-panel2 p {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.foot-panel2 a {
+  display: block;
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.foot-panel2 a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Footer Panel 3: Logo & Selectors */
+.foot-panel3 {
+  background-color: #232f3e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 25px 0;
+  flex-wrap: wrap;
+}
+
+.foot-panel3 .logo {
+  height: 35px;
+  width: 90px;
+}
+
+.select-options {
+  display: flex;
+  gap: 10px;
+}
+
+.foot-btn {
+  background-color: transparent;
+  border: 1px solid #848688;
+  color: #cccccc;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.foot-btn:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* Footer Panel 4: Legal & Copyright */
+.foot-panel4 {
+  background-color: #131a22;
+  color: #dddddd;
+  padding: 30px 15px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.foot-panel4 .pages {
+  margin-bottom: 10px;
+}
+
+.foot-panel4 a {
+  color: #dddddd;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.foot-panel4 a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.foot-panel4 .copyright {
+  color: #999999;
+  font-size: 0.75rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .box {
+    width: calc(50% - 10px);
+  }
+  
+  .foot-panel2 {
+    padding: 30px 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+  }
+  
+  .nav-search {
+    max-width: 200px;
+  }
+  
+  .add-first, .add-sec {
+    display: none;
+  }
+  
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .photo-section {
+    background-attachment: scroll;
+    -webkit-background-attachment: scroll;
+    height: 320px;
+    background-position: top center;
+  }
+}
